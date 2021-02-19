@@ -22,8 +22,6 @@ body {
   height:auto;
   width:100%;
   color:#ffffff;
-  text-align: center;
-  font-family: sans-serif;
 }
 
 h1 {
@@ -31,11 +29,10 @@ h1 {
 }
 img {
   width:130px;
-  
 }
 
 .top {
-  margin-top: 85px;
+  margin-top: 75px;
 }
 
 .flex {
@@ -45,10 +42,9 @@ img {
 }
 
 .title-img {
-  width:40%;
-  box-shadow: none;
-  border-radius: none;
+  width:30%;
   display: flex;
+  justify-self:end;
 }
 
 p { 
@@ -65,13 +61,15 @@ button {
   font-family: 'Reggae One', cursive;
   /* color:rgb(185, 164, 89); */
   /* color:#9ea168; */
-  color:#979c3b;
+  color:#48a0f7;
   padding:5px;
   border-color:rgb(69, 69, 69);
 }
 
 .actors {
   margin-top: 10px;
+  text-align: center;
+  margin-left: 3px;
 }
 
 .box-flex {
@@ -88,11 +86,11 @@ button {
 .flex-div {
   display: flex;
   justify-content: end;
-  margin-right:100px;
+  margin-right:150px;
 }
 
 em {
-  color:#979c3b;
+  color:#48a0f7;
 }
 
 /* .wrap {
@@ -100,3 +98,29 @@ em {
   flex-direction: column;
   flex-wrap: nowrap;
 } */
+
+
+ audio {
+   margin-top:100px;
+    width: 50px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.intructions {
+  margin-top:100px;
+  width:55%;
+  font-size:20px;
+  margin-left:100px;
+  
+}
+
+.blink-me {
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
