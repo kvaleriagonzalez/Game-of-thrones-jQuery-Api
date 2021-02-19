@@ -17,8 +17,6 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 }
 body {
   background-color: #000;
-  background-repeat: no-repeat;
-  background-size: cover;
   height:auto;
   width:100%;
   color:#ffffff;
@@ -38,7 +36,6 @@ img {
 .flex {
   display:flex;
   flex-direction: row;
-  /* flex-wrap: nowrap; */
 }
 
 .title-img {
@@ -59,8 +56,6 @@ button {
   font-size:12px;
   background-color:	#000000;
   font-family: 'Reggae One', cursive;
-  /* color:rgb(185, 164, 89); */
-  /* color:#9ea168; */
   color:#48a0f7;
   padding:5px;
   border-color:rgb(69, 69, 69);
@@ -92,13 +87,6 @@ button {
 em {
   color:#48a0f7;
 }
-
-/* .wrap {
-  display:flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-} */
-
 
  audio {
    margin-top:100px;
