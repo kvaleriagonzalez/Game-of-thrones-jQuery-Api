@@ -44,9 +44,7 @@ row-gap: 120px;
 }
 
 .title-img {
-  width:30%;
-  display: flex;
-  justify-self:end;
+  width:100%;
 }
 
 p { 
@@ -71,7 +69,7 @@ button {
   text-align: center;
   margin-left: 3px;
   position: absolute;
-  width: 7%;
+  width: 8%;
 }
 
 .box-flex {
@@ -79,13 +77,13 @@ button {
   flex-direction: column;
 }
 
-.no-margin {
-  margin-left:80px;
-}
 .flex-div {
   display: flex;
   justify-content: end;
-  margin-right:150px;
+}
+.flex {
+  display: flex;
+  margin-right: 9%;
 }
 
 em {
@@ -94,9 +92,9 @@ em {
 
  audio {
    margin-top:100px;
-    width: 50px;
-    height: 30px;
-    border-radius: 10px;
+  width: 50px;
+  height: 30px;
+  border-radius: 10px;
 }
 
 .intructions {
@@ -115,4 +113,52 @@ em {
   50% {
     opacity: 0;
   }
+}
+
+@media (max-width:1130px) {
+.grid {
+grid-template-columns: repeat(4, 1fr);
+}
+.actors {
+width: 13%;
+}
+.title-img {
+width: 53%;
+}
+.flex-div {
+flex-direction: column;
+}
+.flex {
+justify-content: flex-end;
+}
+audio {
+margin-top: 100px;
+}
+}
+
+@media (max-width:750px) {
+.actors {
+width: 17%;
+}
+.grid {
+grid-template-columns: repeat(3, 1fr);
+}
+}
+@media (max-width:755px) {
+.grid {
+grid-template-columns: repeat(2, 1fr);
+}
+audio {
+margin-top: 91px;
+}
+.title-img {
+width: 84%;
+}
+.intructions {
+width: 67%;
+margin-left: 10%;
+}
+.actors {
+width: 32%;
+}
 }
