@@ -32,10 +32,15 @@ img {
 .top {
   margin-top: 75px;
 }
+.wrapper {
+  max-width: 1400px;
+}
 
-.flex {
-  display:flex;
-  flex-direction: row;
+.grid {
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+justify-items: center;
+row-gap: 120px;
 }
 
 .title-img {
@@ -65,14 +70,13 @@ button {
   margin-top: 10px;
   text-align: center;
   margin-left: 3px;
+  position: absolute;
+  width: 7%;
 }
 
 .box-flex {
   display:flex;
   flex-direction: column;
-  width:7%;
-  margin-left:120px;
-  margin-right:0;
 }
 
 .no-margin {
